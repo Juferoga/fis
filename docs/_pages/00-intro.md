@@ -1,7 +1,7 @@
 ---
-title: Design Draft
-author: Tao He
-date: 2022-02-06
+title: Sobre el proyecto
+author: Juferoga
+date: 2023-01-31
 category: Jekyll
 layout: post
 ---
