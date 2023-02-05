@@ -34,8 +34,6 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-.angular
-.angular/
 .angular/cache/
 .sass-cache/
 connect.lock
@@ -47,3 +45,5 @@ typings
 # System files
 .DS_Store
 Thumbs.db
+/frontend/.angular
+.angular
