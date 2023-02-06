@@ -20,6 +20,9 @@ En este apartado podrás encontrar un recuento de todos los informes ejecutivos 
 #### TAREAS REALIZADAS
 ---
 
+<div class="table-wrapper" markdown="block">
+
+
 No. de tarea | Tarea | Descripción | Propietario/Equipo | Observaciones
 :---:|:---:|:---:|:---:|:---:
 1| Especificación de requerimientos funcionales|Aplicación de técnicas de levantamiento de información para determinar requerimientos funcionales y no funcionales del aplicativo | Líder, Líder de desarrollo | No se tuvo ningún problema
@@ -29,8 +32,14 @@ No. de tarea | Tarea | Descripción | Propietario/Equipo | Observaciones
 5| Diseño de interfaces | Realización de las interfaces para la aprobación del cliente  | Líder, Líder de desarrollo, Líder de calidad | No se tuvo ningún problema
 6| Documentación del diseño y decisiones tomadas | Desarrollo de un documento para mostrar tanto al cliente como al equipo de desarrollo con el fin de tener un conocimiento general y estándar sobre el desarrollo del proyecto | Equipo | No se tuvo ningún problema
 
+
+</div>
+
 #### RIESGOS
 ---
+
+<div class="table-wrapper" markdown="block">
+
 
 No. riesgo | Riesgo | Descripción | Propietario/Equipo | Observaciones
 :---:|:---:|:---:|:---:|:---:
@@ -40,6 +49,8 @@ No. riesgo | Riesgo | Descripción | Propietario/Equipo | Observaciones
 4| Desconocimiento de las tecnologías | El equipo de desarrollo no está al 100% familiarizado con las tecnologías del producto, por lo que puede ser un problema en el diseño, desarrollo e implementación de este. | Líder, Líder de desarrollo, Líder de calidad | No se tuvo ningún problema
 5| Integraciones con sistemas externos desconocidos. | Debido a que el equipo de trabajo debe tener claridad total de los sistemas externos usados para poder implementarlos de una manera adecuada y amena al cliente o usuario final. | Líder, Líder de desarrollo, Líder de calidad | No se tuvo ningún problema
 6| Requerimientos cambiantes. | Puesto que el equipo de trabajo deberá diseñar y desarrollar el sistema para que tolere cambios constantes en los requerimientos. | Equipo | No se tuvo ningún problema
+
+</div>
 
 #### INTEGRANTES DEL EQUIPO
 ---
