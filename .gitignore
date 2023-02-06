@@ -47,3 +47,6 @@ typings
 Thumbs.db
 /frontend/.angular
 .angular
+
+__pycache__/
+/backend/fisproject/fisproject/__pycache__
