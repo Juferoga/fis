@@ -8,7 +8,7 @@ layout: post
 
 Una de las etapas fundamentales y más importante para el desarrollo de software. Es la etapa en la cual se analiza el proyecto, es en la cual podemos obtener los fundamentos en los que se basara el proyecto que se cree.
 
-## Problemáticas empresariales
+<!-- ## Problemáticas empresariales
 --- 
 
 Draft
@@ -41,4 +41,4 @@ Draft
 ## Definición de actores y privilegios por actor
 --- 
 
-Draft
+Draft -->

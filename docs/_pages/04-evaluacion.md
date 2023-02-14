@@ -13,7 +13,7 @@ En el presente apartado se desarrollará la construcción de un plan de pruebas 
 
 Con el fin de obtener una visión integral de los componentes funcionales del aplicativo desarrollado, se realizarán una serie de pruebas para evaluar los aspectos presentados a continuación.
 
-<table>
+<!-- <table>
   <thead>
     <tr>
       <th>Módulo</th>
@@ -96,4 +96,4 @@ Draft
 
 ## Ensamblado del sistema
 ---
-Ensamblado en local del sistema.
+Ensamblado en local del sistema. -->
