@@ -29,7 +29,7 @@ layout: post
 
 [Tool for diagram for cloud implementation.][1]
 
-## Instalación
+<!-- ## Instalación
 --- 
 
 Instalación del sistema.
@@ -37,7 +37,7 @@ Instalación del sistema.
 ## Soporte técnico post-instalación
 --- 
 
-Errores post-instalación? obvio si 😆.
+Errores post-instalación? obvio si 😆. -->
 
 
 [1]:https://www.cloudcraft.co/

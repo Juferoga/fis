@@ -6,7 +6,7 @@ category: Jekyll
 layout: post
 ---
 
-## Definición de datos
+<!-- ## Definición de datos
 --- 
 
 Draft
@@ -14,7 +14,7 @@ Draft
 ## Diseño de interfaces
 --- 
 
-Draft
+Draft -->
 
 ## Desarrollo de software
 --- 
