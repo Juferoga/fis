@@ -9,6 +9,9 @@ permalink: /
 <img src="https://www.udistrital.edu.co/themes/custom/versh/images/default/preloader.png" width="192px" height="192px" align="right"/>
 
 [![Juan Felipe Rodriguez Galindo](https://img.shields.io/badge/Juferoga-github-br?style=flat-square)][1]
+[![Felipe Martin Rodríguez](https://img.shields.io/badge/felimarod-github-blue?style=flat-square)][9]
+[![Brayan Stiven Yate](https://img.shields.io/badge/BrayanYate-github-red?style=flat-square)][10]
+[![Nicolas Farias](https://img.shields.io/badge/NicoFarii-github-yellow?style=flat-square)][11]
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)][2]
 
 
@@ -48,6 +51,9 @@ Sigue la [guía de github][8] para más información.
 
 ## Contributors:
  - [Juan Felipe Rodríguez Galindo - Código 20181020158][1]
+ - [Andrés Felipe Martín R. 20201020137][9]
+ - [Brayan Stiven Yate P. 20192020151][10]
+ - [Nicolas Farias 20182020000][11]
 
  [1]:https://gitlab.com/Juferoga
  [2]:https://github.com/Juferoga/fis/blob/main/LICENSE
@@ -57,3 +63,6 @@ Sigue la [guía de github][8] para más información.
  [6]:https://www.docker.com/
  [7]:https://github.com/Juferoga/fis/frontend/
  [8]:https://docs.github.com/es/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+ [9]:https://gitlab.com/felimarod
+ [10]:https://gitlab.com/BrayanYate
+ [11]:https://gitlab.com/nicofarii
