@@ -1,9 +1,3 @@
----
-layout: home
-title: FIS - UD
-permalink: /
----
-
 # 👻  **FUNDAMENTOS DE INGENIERÍA DE SOFTWARE**
 
 <img src="https://www.udistrital.edu.co/themes/custom/versh/images/default/preloader.png" width="192px" height="192px" align="right"/>
@@ -53,7 +47,7 @@ Sigue la [guía de github][8] para más información.
  - [Juan Felipe Rodríguez Galindo - Código 20181020158][1]
  - [Andrés Felipe Martín R. 20201020137][9]
  - [Brayan Stiven Yate P. 20192020151][10]
- - [Nicolas Farias 20182020000][11]
+ - [Nicolas Farias 20182020096][11]
 
  [1]:https://gitlab.com/Juferoga
  [2]:https://github.com/Juferoga/fis/blob/main/LICENSE
