@@ -12,5 +12,5 @@ export const environment = {
   materia: 'FIS',
   proyecto: 'Cine Distrito',
   profesor: 'Santiago Salazar',
-  api: 'localhost:8000/'
+  api: 'http://localhost:8000/'
 };
