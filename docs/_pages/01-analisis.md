@@ -47,6 +47,32 @@ Draft
 
 
 
+### Requerimientos NO funcionales - criterios de aceptación
+---
+
+#### Disponibilidad
+
+| ID     | Rol     | Característica | Resultado | Criterio de Aceptación |
+|:------ | :------:  | -------------- | --------  | ---------------------- |
+| 1      | roles   | Consultas en la plataforma  | Se obtendrá una información por parte del api  | **Dado** cualquier usuario que desee obtener alguna información y lo tenga permitido, **cuando** se realice la petición **entonces** el sistema tiene que retornar la información en menos de 0.5 seg mínimo. |
+| 1      | roles   | Consultas en la plataforma  | Se obtendrá una información por parte del api  | **Dado** cualquier usuario que desee obtener alguna información y lo tenga permitido, **cuando** se realice la petición **entonces** el sistema tiene que retornar la información en menos de 0.5 seg mínimo. |
+#### Mantenibilidad
+| ID | Rol | Característica | Resultado | Criterio de Aceptación |
+| -- | --- | -------------- | --------- | ---------------------- |
+| 1 | Programador | Necesito conocer la manera en que funciona el sistema en la actualidad | Con la finalidad de optimizar y mejorar los sistemas actuales |  |  |  |
+| 2 | 
+%% **Como** programador **quiero** analizar el código existente **para** mejorar y/o mantener el mismo |  |  |  |
+Presentar un código que no tenga antipatrones y cuente con buenas practicas de programación como SOLID.
+#### Seguridad
+- Condicionar a las políticas de seguridad del dominio.
+
+| ID     | Rol     | Característica                   | Resultado | Criterio de Aceptación |
+| ------ | ------  | ----                             | ------    | ------                 |
+| 1      | Usuario | Necesito recuperar mi contraseña | Conocer o cambiar mi contraseña | **Dado** un usuario sin loguear **cuando** desea ingresar a la plataforma **entonces** no puede ya que desconoce la contraseña.  |
+| 2      | Usuario | Necesito recuperar mi usuario | Conocer o cambiar mi usuario | **Dado** un usuario sin loguear **cuando** desea ingresar a la plataforma **entonces** no puede ya que desconoce el usuario.
+| 3      | Usuario | Necesito pagar por los servicios de la plataforma| Pago de los servicios | **Dado** un usuario con una tarjeta validad **cuando** desea pagar por algun servicio de la plataforma **entonces**  
+
+
 ## Definición de actores y privilegios por actor
 --- 
 
