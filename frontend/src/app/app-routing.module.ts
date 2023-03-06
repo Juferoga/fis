@@ -9,7 +9,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { OnBuildComponent } from './pages/on-build/on-build.component';
+import { PaymentComponent } from './shared/payment/payment.component';
 import { ProfileComponent } from './shared/profile/profile.component';
+import { StockComponent } from './shared/stock/stock.component';
 
 const routes: Routes = [
   {
@@ -46,7 +48,7 @@ const routes: Routes = [
       },
       {
         path: 'mi-inventario',
-        component: OnBuildComponent
+        component: StockComponent
       },
       {
         path: 'mis-ventas',
@@ -76,7 +78,7 @@ const routes: Routes = [
       },
       {
         path: 'mi-inventario',
-        component: OnBuildComponent
+        component: StockComponent
       },
       {
         path: 'mis-ventas',
@@ -93,10 +95,15 @@ const routes: Routes = [
     ]
   },
   {
+    path:'test',
+    component: PaymentComponent,
+    pathMatch: 'full'
+  },
+  {
     path:'**',
     component: NotFoundComponent,
     pathMatch:'full'
-  }
+  },
 ];
 
 @NgModule({

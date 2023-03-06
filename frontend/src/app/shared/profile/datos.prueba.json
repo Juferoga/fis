@@ -1,0 +1,9 @@
+{
+    "empleado": {
+        "rol" : "Encargado de sala",
+        "cinemax" : "Central",
+        "sala" : 1,
+        "startDateContract": "01022003",
+        "salary": 25000
+    }
+}
