@@ -1,0 +1,64 @@
+<div class="container-box-profile">
+  <div class="profile-img">
+    <div>
+      <img src="/assets/icon.png" alt="imagen de perfil" srcset="">
+      <h4>{{'Username'}}</h4>
+      <h5>{{'Name of the user'}}</h5>
+    </div>
+  </div>
+  <div class="scrollable">
+    <div class="profile-info">
+      <div class="profile-info-title">
+        <h5> Datos personales</h5> <p-button icon="pi pi-pencil" label="Editar" (click)="isEdited=!isEdited"></p-button>
+      </div>
+      <div class="profile-info-form">
+        <div>
+          <p><strong>Dirección:</strong> <span *ngIf="!isEdited"> {{"User Data"}} </span></p>
+          <input type="text" pInputText *ngIf="isEdited"/>
+        </div>
+        <div>
+          <p><strong>Teléfono :</strong> <span *ngIf="!isEdited"> {{"User Data"}} </span></p>
+          <input type="tel" pInputText *ngIf="isEdited"/>
+        </div>
+        <div>
+          <p><strong>Correo electrónico</strong> : <span *ngIf="!isEdited"> {{"User Data"}} </span></p>
+          <input type="email" pInputText *ngIf="isEdited"/>
+        </div>
+        <div *ngIf="isEdited">
+          <p><strong>Password:</strong></p>
+          <input type="password" pPassword/>
+        </div>
+      </div>
+      <div class="profile-info-form" *ngIf="role == 'Administrador'">
+        <p>Eres admin :D</p>
+      </div>
+      <div class="profile-info-form" *ngIf="role == 'RepresentanteVentas'">
+        <div>
+          <p><strong>Rol Empleado:</strong> <span > {{"User Data"}} </span></p>
+        </div>
+        <div *ngIf="local!=''">
+          <p><strong>Local:</strong> <span> {{"User Data"}} </span></p>
+        </div>
+        <div *ngIf="cinema!=''">
+          <p><strong>Cinema:</strong> <span> {{"User Data"}} </span></p>
+        </div>
+        <div *ngIf="sala!=0">
+          <p><strong>Sala:</strong> <span> {{"User Data"}} </span></p>
+        </div>
+        <div>
+          <p><strong>Inicio de contrato:</strong> <span> {{"User Data"}} </span></p>
+        </div>
+      </div>
+      <div class="profile-info-form" *ngIf="role == 'Cliente'">
+        <div>
+          <p><strong>Puntos:</strong> <span> {{"User Data"}} </span></p>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="false" class="profile-graphs">
+      <div class="graph">
+        <p-chart type="radar" [data]="data" [options]="chartOptions" [style]="{'width': '40%'}"></p-chart>
+      </div>
+    </div>
+  </div>
+</div>
