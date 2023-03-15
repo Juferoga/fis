@@ -1,8 +1,10 @@
 export class Shows {
     
     idshow!:number;
-    name!:string;
-    hour!:number;
+    idcinema!:number;
+    idmovil!:number; 
+    idhall!:number;
+    datetime!:Date;
   
     constructor(){
       
