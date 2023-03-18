@@ -228,45 +228,36 @@ hola -->
 
 ![Diagrama de clases](/fis/assets/images/pages/planeacion/DiagramaClases.svg "Diagrama de clases")
 
-<!-- ### Diagrama de secuencia
+### Diagrama de secuencia y tiempos
 ---
 
-hola
+![Diagrama de secuencia](/fis/assets/images/pages/planeacion/DiagramaSecuencias.svg "Diagrama de secuencia")
 
 ### Diagrama de estados
 ---
 
-hola
+![Diagrama de estados](/fis/assets/images/pages/planeacion/DiagramaEstados.svg "Diagrama de estados")
 
-### Diagrama de componentes
+### Diagrama de paquetes
 ---
 
-hola
+![Diagrama de paquetes](/fis/assets/images/pages/planeacion/DiagramaPaquetes.svg "Diagrama de paquetes")
 
-### Diagrama de actividades
+### Diagrama entidad relación
 ---
+![Diagrama entidad relación](/fis/assets/images/pages/planeacion/DiagramaER.svg "Diagrama entidad relación")
 
-hola
-
-### Normalización de la BD
----
-
-hola
-
-### Modelo entidad relación
----
-
-hola
-
+<!-- 
 ### Diagrama relacional
 ---
 
-hola
+  TODO: ![Diagrama de estados](/fis/assets/images/pages/planeacion/DiagramaEstados.svg "Diagrama de estados")
 
 ### Diccionario de datos
 ---
 
-hola -->
+  TODO: DICCIONARIO DE DATOS
+-->
 
 
 [1]:https://github.com/users/Juferoga/projects/2/views/3
