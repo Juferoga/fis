@@ -9,7 +9,7 @@
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)][2]
 
 
-Repositorio para almacenar las tareas, talleres, ejercicios, entre otros que se desarrollen a lo largo de la materia Fundamentos de ingeniería de software.
+Repositorio para almacenar las tareas, talleres, ejercicios, entre otros que se desarrollen a lo largo de la materia Fundamentos de ingeniería de software, proyecto Cine distrito.
 
 ## Contenido
 
