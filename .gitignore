@@ -50,3 +50,5 @@ Thumbs.db
 
 __pycache__/
 /backend/fisproject/fisproject/__pycache__
+venv/
+vnev
