@@ -214,7 +214,7 @@ Una de las etapas fundamentales y más importante para el desarrollo de software
         <td>2192</td>
       </tr>
     </tbody>
-  </table>°
+  </table>
 </div>
 
 Para visualizar el diagrama de la mejor manera ingresa el siguiente [enlace.][1]
