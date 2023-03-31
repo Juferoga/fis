@@ -8,23 +8,28 @@ layout: post
 
 Una de las etapas fundamentales y más importante para el desarrollo de software. Es la etapa en la que se definen los objetivos, alcances, recursos y tiempos del proyecto. En esta fase se identifican los requisitos del sistema, se establecen los objetivos de calidad y se determinan los recursos necesarios para cumplirlos. La planificación también incluye la definición de un calendario de desarrollo, un presupuesto y un plan de gestión de riesgos. El objetivo de la fase de planificación es establecer una base sólida para el desarrollo del software, lo que permite al equipo de desarrollo trabajar de manera eficiente y asegurar que el proyecto se complete a tiempo y dentro del presupuesto.
 
-<!-- ## Presupuesto
---- 
+## <!-- ## Presupuesto
 
 ## Lista de riesgos, planes de mitigación y contingencia
---- 
+
+---
 
 ### Identificación de riesgos
+
 ---
 
 #### Riesgos generales (del proceso)
+
 ---
+
 - Reducción o extensión del tiempo empleado para el desarrollo de proyecto debido a factores externos no contemplados.
 
 #### Riesgos del producto
+
 ---
+
 - Mal funcionamiento de las herramientas de desarrollo.
- 
+
 <table>
 <thead>
   <tr>
@@ -61,7 +66,9 @@ Una de las etapas fundamentales y más importante para el desarrollo de software
 </table> -->
 
 ## Cronograma de desarrollo
---- 
+
+---
+
 ### Estimación de proyecto
 
 <div class="table-wrapper" markdown="block">
@@ -214,40 +221,52 @@ Para visualizar el diagrama de la mejor manera ingresa el siguiente [enlace.][1]
 ![Diagrama de Gantt](/fis/assets/images/pages/planeacion/DiagramaDeGantt.png "Diagrama de Gantt")
 
 ## Diagramas del proyecto
---- 
+
+---
 
 En la siguiente sección podrás ver los diagramas necesarios para el desarrollo del proyecto.
 
-<!-- ### Diagrama de casos de uso
----
+## <!-- ### Diagrama de casos de uso
 
 hola -->
 
 ### Diagrama de clases
+
 ---
 
 ![Diagrama de clases](/fis/assets/images/pages/planeacion/DiagramaClases.svg "Diagrama de clases")
 
-### Diagrama de secuencia y tiempos
+### Diagrama de secuencia
+
 ---
 
 ![Diagrama de secuencia](/fis/assets/images/pages/planeacion/DiagramaSecuencias.svg "Diagrama de secuencia")
 
+### Diagrama de tiempos
+
+---
+
+![Diagrama de tiempos](/fis/assets/images/pages/planeacion/DiagramaTiempos.jpg "Diagrama de tiempos")
+
 ### Diagrama de estados
+
 ---
 
 ![Diagrama de estados](/fis/assets/images/pages/planeacion/DiagramaEstados.svg "Diagrama de estados")
 
 ### Diagrama de paquetes
+
 ---
 
 ![Diagrama de paquetes](/fis/assets/images/pages/planeacion/DiagramaPaquetes.svg "Diagrama de paquetes")
 
 ### Diagrama entidad relación
+
 ---
+
 ![Diagrama entidad relación](/fis/assets/images/pages/planeacion/DiagramaER.svg "Diagrama entidad relación")
 
-<!-- 
+<!--
 ### Diagrama relacional
 ---
 
@@ -259,5 +278,4 @@ hola -->
   TODO: DICCIONARIO DE DATOS
 -->
 
-
-[1]:https://github.com/users/Juferoga/projects/2/views/3
+[1]: https://github.com/users/Juferoga/projects/2/views/3
