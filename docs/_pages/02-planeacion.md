@@ -8,7 +8,7 @@ layout: post
 
 Una de las etapas fundamentales y más importante para el desarrollo de software. Es la etapa en la que se definen los objetivos, alcances, recursos y tiempos del proyecto. En esta fase se identifican los requisitos del sistema, se establecen los objetivos de calidad y se determinan los recursos necesarios para cumplirlos. La planificación también incluye la definición de un calendario de desarrollo, un presupuesto y un plan de gestión de riesgos. El objetivo de la fase de planificación es establecer una base sólida para el desarrollo del software, lo que permite al equipo de desarrollo trabajar de manera eficiente y asegurar que el proyecto se complete a tiempo y dentro del presupuesto.
 
-## <!-- ## Presupuesto
+<!-- ## Presupuesto
 
 ## Lista de riesgos, planes de mitigación y contingencia
 
@@ -225,10 +225,6 @@ Para visualizar el diagrama de la mejor manera ingresa el siguiente [enlace.][1]
 ---
 
 En la siguiente sección podrás ver los diagramas necesarios para el desarrollo del proyecto.
-
-## <!-- ### Diagrama de casos de uso
-
-hola -->
 
 ### Diagrama de clases
 
