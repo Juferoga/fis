@@ -35,6 +35,12 @@ import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { FileUploadModule } from 'primeng/fileupload';
 import { PaymentComponent } from './shared/payment/payment.component';
 import { StockComponent } from './shared/stock/stock.component';
+import { TabViewModule } from 'primeng/tabview';
+import { PurchaseComponent } from './pages/purchase/purchase.component';
+import { DataViewModule, DataViewLayoutOptions } from 'primeng/dataview';
+import { ShowsComponent } from './pages/shows/shows.component';
+import { MoviesComponent } from './shared/movies/movies.component';
+
 
 @NgModule({
   declarations: [
@@ -50,6 +56,9 @@ import { StockComponent } from './shared/stock/stock.component';
     OnBuildComponent,
     PaymentComponent,
     StockComponent,
+    PurchaseComponent,
+    ShowsComponent,
+    MoviesComponent,
   ],
   imports: [
     BrowserModule,
@@ -61,6 +70,7 @@ import { StockComponent } from './shared/stock/stock.component';
     ButtonModule,
     HttpClientModule,
     ToastModule,
+    TabViewModule,
     FormsModule,
     MenubarModule,
     SlideMenuModule,
@@ -73,7 +83,8 @@ import { StockComponent } from './shared/stock/stock.component';
     ConfirmDialogModule,
     FileUploadModule,
     DropdownModule,
-    RatingModule
+    RatingModule,
+    DataViewModule
   ],
   providers: [
     MessageService,

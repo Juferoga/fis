@@ -12,6 +12,8 @@ import { OnBuildComponent } from './pages/on-build/on-build.component';
 import { PaymentComponent } from './shared/payment/payment.component';
 import { ProfileComponent } from './shared/profile/profile.component';
 import { StockComponent } from './shared/stock/stock.component';
+import { PurchaseComponent } from './pages/purchase/purchase.component';
+import { ShowsComponent } from './pages/shows/shows.component';
 
 const routes: Routes = [
   {
@@ -56,11 +58,11 @@ const routes: Routes = [
       },
       {
         path: 'mis-compras',
-        component: OnBuildComponent
+        component: PurchaseComponent
       },
       {
-        path: 'mis-referidos',
-        component: OnBuildComponent
+        path: 'cartelera',
+        component: ShowsComponent
       }
     ]
   },

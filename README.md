@@ -27,6 +27,11 @@ Primero debes tener instalado [docker][6], ejecuta el script para desplegar en l
 ```
 ./despliegue.sh
 ```
+Otra forma es crear un entorno virtual en python para manejar las librerías necesarias que utiliza django.
+```
+python3 -m venv venv
+source ./venv/bin/activate
+```
 
 ### Frontend
 Sigue la [guía][7]
