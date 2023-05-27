@@ -3,9 +3,9 @@ from .data import *
 from .managers import *
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
+from apps.unity.models import Unity
 
 class User(AbstractUser):
-  fk_id = models.SmallAutoField(primary_key=True)
   phone = models.DecimalField(max_digits=20,decimal_places=0,null=True)
   role = models.TextField(choices=ROLES, verbose_name="rol", null=True)
 
@@ -14,8 +14,8 @@ class User(AbstractUser):
   def get_phone(self):
     return self.phone
   
-  def get_role(self): 
-    return self.role
+  def get_role(self):
+    return ROLES[int(self.role)-1][1]
 
   def __str__(self):
     return f'{self.first_name} {self.last_name}, {self.get_role}'
@@ -58,4 +58,9 @@ class Employee (User):
     User, 
     on_delete=models.CASCADE,
     related_name="employees"
+  )
+  fk_unity = models.ForeignKey(
+    Unity, 
+    on_delete=models.CASCADE,
+    null=True
   )

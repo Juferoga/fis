@@ -262,12 +262,12 @@ En la siguiente sección podrás ver los diagramas necesarios para el desarrollo
 
 ![Diagrama entidad relación](/fis/assets/images/pages/planeacion/DiagramaER.svg "Diagrama entidad relación")
 
-<!--
 ### Diagrama relacional
 ---
 
-  TODO: ![Diagrama de estados](/fis/assets/images/pages/planeacion/DiagramaEstados.svg "Diagrama de estados")
+  ![Diagrama relacional](/fis/assets/images/pages/planeacion/DiagramaRelacional.svg "Diagrama relacional")
 
+<!--
 ### Diccionario de datos
 ---
 
