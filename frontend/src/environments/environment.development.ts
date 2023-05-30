@@ -12,5 +12,7 @@ export const environment = {
   materia: 'FIS',
   proyecto: 'Cine Distrito',
   profesor: 'Santiago Salazar',
-  api: 'http://localhost:8000/'
+  api: 'http://localhost:8000/',
+  api_factura: 'http://localhost:8000/',
+  server: 'http://localhost:8000/',
 };
