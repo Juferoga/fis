@@ -11,7 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminComponent } from './pages/admin/admin.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { ButtonModule } from 'primeng/button';
@@ -40,7 +40,26 @@ import { PurchaseComponent } from './pages/purchase/purchase.component';
 import { DataViewModule, DataViewLayoutOptions } from 'primeng/dataview';
 import { ShowsComponent } from './pages/shows/shows.component';
 import { MoviesComponent } from './shared/movies/movies.component';
-
+import { UsersComponent } from './pages/users/users.component';
+import { ErrorInterceptorService } from './core/interceptors/error-interceptor.service';
+import { TokenInterceptor } from './core/interceptors/token-interceptor.service';
+import { ResponseInterceptorService } from './core/interceptors/response.interceptor.service';
+import { TagModule } from 'primeng/tag';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { SelectButtonModule } from 'primeng/selectbutton';
+import { StepsModule } from 'primeng/steps';
+import { CardModule } from 'primeng/card';
+import { InputMaskModule } from 'primeng/inputmask';
+import { StatsComponent } from './pages/stats/stats.component';
+import { SellsComponent } from './pages/sells/sells.component';
+import { DeadlineComponent } from './shared/deadline/deadline.component';
+import { SeatDemo } from './pages/purchase/seat';
+import { PersonalDemo } from './pages/purchase/personal';
+import { PaymentDemo } from './pages/purchase/payment';
+import { ConfirmationDemo } from './pages/purchase/confirmation';
+import { TicketService } from './core/services/compra/ticket.service';
+import { CheckboxModule } from 'primeng/checkbox';
+import { SplitterModule } from 'primeng/splitter';
 
 @NgModule({
   declarations: [
@@ -59,8 +78,17 @@ import { MoviesComponent } from './shared/movies/movies.component';
     PurchaseComponent,
     ShowsComponent,
     MoviesComponent,
+    UsersComponent,
+    StatsComponent,
+    SellsComponent,
+    DeadlineComponent,
+    PaymentDemo, 
+    PersonalDemo, 
+    SeatDemo, 
+    ConfirmationDemo
   ],
   imports: [
+    TagModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -70,6 +98,7 @@ import { MoviesComponent } from './shared/movies/movies.component';
     ButtonModule,
     HttpClientModule,
     ToastModule,
+    InputMaskModule,
     TabViewModule,
     FormsModule,
     MenubarModule,
@@ -84,12 +113,32 @@ import { MoviesComponent } from './shared/movies/movies.component';
     FileUploadModule,
     DropdownModule,
     RatingModule,
-    DataViewModule
+    DataViewModule,
+    RadioButtonModule,
+    SelectButtonModule,
+    StepsModule,
+    CheckboxModule,
+    CardModule,
+    SplitterModule
   ],
   providers: [
     MessageService,
     ConfirmationService,
-    FilterService
+    FilterService,
+    TicketService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ErrorInterceptorService,
+      multi: true,
+    },
+    { provide: HTTP_INTERCEPTORS, 
+      useClass: TokenInterceptor, 
+      multi: true },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ResponseInterceptorService,
+      multi: true,
+    },
   ],
   bootstrap: [AppComponent]
 })
