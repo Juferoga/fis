@@ -28,7 +28,8 @@ SECRET_KEY = 'django-insecure-_p@*^$ps8q$w6grl8-(#+a$#q!ix%-ayd#a^91h6a6s4vf+gbu
 DEBUG = True
 
 ALLOWED_HOSTS = [
-  '*'
+  '*',
+  'http://localhost:4200'
 ]
 
 SYSTEM_APPS = [
@@ -44,11 +45,11 @@ SYSTEM_APPS = [
 LIBRARY_APPS = [
   'rest_framework',
   'rest_framework.authtoken',
+  'corsheaders',
 ]
 
 PROJECT_APPS = [
   'apps.api',
-  'apps.authorization',
   'apps.movies',
   'apps.show',
   'apps.snacks',
@@ -71,6 +72,9 @@ MIDDLEWARE = [
   'django.contrib.auth.middleware.AuthenticationMiddleware',
   'django.contrib.messages.middleware.MessageMiddleware',
   'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+  'django.middleware.common.CommonMiddleware',
+  'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'fisproject.urls'
@@ -165,4 +169,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # AGREGANDO CONFIGURACION DE REST FRAMEWORK 
 
 CORS_ALLOW_ALL_ORIGINS = True
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:4200',
+    'https://localhost:4200',
+]
+CORS_ALLOW_CREDENTIALS = True
+
 AUTH_USER_MODEL = 'user.User'

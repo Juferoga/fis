@@ -1,4 +1,9 @@
 import { Component } from "@angular/core";
+import { MessageService } from "primeng/api";
+import { Representantes } from "src/app/core/models/representantes/representantes.model";
+import { User } from "src/app/core/models/users/user.model";
+import { RepresentanteService } from "src/app/core/services/representantes/representante.service";
+import { UserService } from "src/app/core/services/users/user.service";
 
 @Component({
   selector: "app-profile",
@@ -6,21 +11,77 @@ import { Component } from "@angular/core";
   styleUrls: ["./profile.component.scss"],
 })
 export class ProfileComponent {
-
   // TODO: Integrate -> https://primeng.org/tree/horizontal
-  isEdited:boolean = false;
-  role:string = localStorage.getItem("role")? localStorage.getItem("role"):sessionStorage.getItem("role");
-  
-  cinema:string = "Central";
-  sala:number = 1;
-  local:string = "Alejado";
 
+  userLoading = {
+    nombre: "",
+    apellido: "",
+    fecha_de_nacimiento: null,
+    genero: "",
+    telefono: 0,
+    direccion: "",
+    email: "",
+    estado: "",
+
+  };
+
+  username = sessionStorage.getItem("username")
+    ? sessionStorage.getItem("username")
+    : "Loading...";
+  representantes: Representantes[];
+  user: User = this.userLoading;
   data: any;
   chartOptions: any;
+  isEdited: boolean = false;
+  isDeleteUser: boolean = false;
 
-  constructor() {}
+  constructor(
+    private userService: UserService,
+    private repService: RepresentanteService,
+    private messageService: MessageService
+  ) {}
 
   ngOnInit() {
+    this.userService.getUser().subscribe(
+      (user: any) => {
+        this.user = user["data"];
+        this.messageService.add({
+          key: "grl-toast",
+          severity: "success",
+          summary: "Consulta exitosa",
+          detail: "La consulta se realizo correctamente sobre la base de datos",
+        });
+      },
+      (err) => {
+        this.messageService.add({
+          key: "grl-toast",
+          severity: "error",
+          summary: "Consulta realizada SIN ÉXITO",
+          detail: "::: ERROR ::: \n" + err["error"]["detail"],
+        });
+      }
+    );
+
+    this.repService.getRepresentantes().subscribe(
+      (representante: Representantes[]) => {
+        this.representantes = representante["data"];
+        this.messageService.add({
+          key: "grl-toast",
+          severity: "success",
+          summary: "Consulta exitosa",
+          detail: "La consulta se realizo correctamente sobre la base de datos",
+        });
+      },
+      (err) => {
+        this.messageService.add({
+          key: "grl-toast",
+          severity: "error",
+          summary: "Consulta realizada SIN ÉXITO",
+          detail: "::: ERROR ::: \n" + err["error"]["detail"],
+        });
+      }
+    );
+
     this.data = {
       labels: [
         "Eating",
@@ -55,4 +116,35 @@ export class ProfileComponent {
       ],
     };
   }
+
+  editUsuario() {
+    let fecha = this.user.fecha_de_nacimiento.toString().split("T")[0];
+    this.user.fecha_de_nacimiento = fecha as any;
+  }
+  deleteUser() {
+    this.isDeleteUser=true
+    console.log("Usuario BORRADO");
+  }
+
+  saveUser() {
+    this.userService.setUser(this.user).subscribe(
+      (user: any) => {
+        this.messageService.add({
+          key: "grl-toast",
+          severity: "success",
+          summary: "Consulta exitosa",
+          detail: "Se realizo la actualización correctamente",
+        });
+      },
+      (err) => {
+        this.messageService.add({
+          key: "grl-toast",
+          severity: "error",
+          summary: "Consulta realizada SIN ÉXITO",
+          detail: "::: ERROR ::: \n" + err["error"]["detail"],
+        });
+      }
+    );
+  }
+
 }

@@ -1,35 +1,55 @@
 export class User{
-  id!:number;
-  name!:string;
-  email!:string;
-  password!:string;
-  phone!:number;
-
-  constructor(){
-  }
-}
-
-export class Client extends User{
-  idClient!:number;
-  points!:number;
-  purchase!:number;
-
-  constructor(){
-    super();
-  }
-}
-
-export class Employee extends User{
-  idEmployee!:number;
-  idRole!:string;
-  idLocal!:number;
-  idCinema!:number;
-  idHall!:number;
-  startDateContract!:Date;
-  salary!:number;
+  id ?: number;
+  nombre: string;
+  apellido: string;
+  fecha_de_nacimiento: Date;
+  genero: string;
+  telefono: number;
+  direccion: string;
+  email: string;
+  estado: string = 'A';
+  username?: string;
+  representante?: string;
+  ciudad?: string;
   
+  contrato?: string;
+  region?: string;
+  pais?: string;
+  clasificacion?: string;
+  
+  password?: string;
 
   constructor(){
-    super()
   }
 }
+
+// export class User{
+//   id : number;
+//   nombre : string;
+//   apellido : string;
+//   fecha_de_nacimiento : Date;
+//   genero : string;
+//   telefono : number;
+//   direccion : string;
+//   email : string;
+//   estado : string;
+
+//   constructor(){
+//   }
+// }
+
+// export class UserOfDB extends User{
+//   username : string;
+//   password
+// }
+
+// export class Representante extends UserOfDB{
+//   contrato : Date;
+//   region : string;
+//   pais : string;
+//   clasificacion : string;
+// }
+
+// export class Cliente extends UserOfDB{
+//   ciudad : string;
+// }

@@ -4,7 +4,7 @@ export const environment = {
   repositorio: 'https://github.com/juferoga/fis',
   juferoga: 'https://github.com/juferoga/',
   integrantes: [
-    {'name':'Felipe Martin','code':'2018102000','url':'https://github.com/juferoga'},
+    {'name':'Andrés Felipe Martín','code':'20201020137','url':'https://github.com/felimarod'},
     {'name':'Brayan Yate','code':'20171020000','url':'https://github.com/juferoga'},
     {'name':'Nicolas Farias','code':'20181020000','url':'https://github.com/juferoga'},
     {'name':'Juan Felipe Rodríguez','code':'20181020158','url':'https://github.com/juferoga'},
@@ -12,5 +12,7 @@ export const environment = {
   materia: 'FIS',
   proyecto: 'Cine Distrito',
   profesor: 'Santiago Salazar',
-  api: 'http://localhost:8000/'
+  api: 'http://localhost:8000/api/',
+  api_factura: 'http://localhost:8000/',
+  server: 'http://localhost:8000/',
 };

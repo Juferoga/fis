@@ -14,6 +14,15 @@ import { ProfileComponent } from './shared/profile/profile.component';
 import { StockComponent } from './shared/stock/stock.component';
 import { PurchaseComponent } from './pages/purchase/purchase.component';
 import { ShowsComponent } from './pages/shows/shows.component';
+import { UsersComponent } from './pages/users/users.component';
+import { StatsComponent } from './pages/stats/stats.component';
+import { SellsComponent } from './pages/sells/sells.component';
+import { SeatDemo } from './pages/purchase/seat';
+import { PaymentDemo } from './pages/purchase/payment';
+import { ConfirmationDemo } from './pages/purchase/confirmation';
+import { MoviesDemo } from './pages/purchase/movies';
+import { ShowsDemo } from './pages/purchase/shows';
+import { SnacksDemo } from './pages/purchase/snacks';
 
 const routes: Routes = [
   {
@@ -40,13 +49,14 @@ const routes: Routes = [
     path: 'admin',
     component: AdminComponent,
     canActivate: [CheckLoginGuard],
-    data: {
-      allowedRoles: [ROLES.ADMINISTRATOR],
-    },
     children: [
       {
         path: 'mi-perfil',
         component: ProfileComponent
+      },
+      {
+        path: 'usuarios',
+        component: UsersComponent
       },
       {
         path: 'mi-inventario',
@@ -54,52 +64,43 @@ const routes: Routes = [
       },
       {
         path: 'mis-ventas',
-        component: OnBuildComponent
+        component: SellsComponent
       },
       {
         path: 'mis-compras',
-        component: PurchaseComponent
+        component: PurchaseComponent,
+        children: [
+          {
+            path: 'movies',
+            component: MoviesDemo
+          },
+          {
+            path: 'shows',
+            component: ShowsDemo
+          },
+          {
+            path: 'seat',
+            component: SeatDemo
+          },
+          {
+            path: 'snacks',
+            component: SnacksDemo
+          },
+          {
+            path: 'payment',
+            component: PaymentDemo
+          },
+          {
+            path: 'confirmation',
+            component: ConfirmationDemo
+          }
+        ]
       },
       {
-        path: 'cartelera',
-        component: ShowsComponent
+        path: 'estadisticas',
+        component: StatsComponent
       }
     ]
-  },
-  {
-    path: 'app',
-    component: LayoutComponent,
-    canActivate: [CheckLoginGuard],
-    data: {
-      allowedRoles: [ROLES.CLIENTE, ROLES.REPRESENTANTE_VENTAS],
-    },
-    children: [
-      {
-        path: 'mi-perfil',
-        component: ProfileComponent
-      },
-      {
-        path: 'mi-inventario',
-        component: StockComponent
-      },
-      {
-        path: 'mis-ventas',
-        component: OnBuildComponent
-      },
-      {
-        path: 'mis-compras',
-        component: OnBuildComponent
-      },
-      {
-        path: 'mis-referidos',
-        component: OnBuildComponent
-      }
-    ]
-  },
-  {
-    path:'test',
-    component: PaymentComponent,
-    pathMatch: 'full'
   },
   {
     path:'**',
