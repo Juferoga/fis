@@ -54,13 +54,16 @@ import { StatsComponent } from './pages/stats/stats.component';
 import { SellsComponent } from './pages/sells/sells.component';
 import { DeadlineComponent } from './shared/deadline/deadline.component';
 import { SeatDemo } from './pages/purchase/seat';
-import { PersonalDemo } from './pages/purchase/personal';
 import { PaymentDemo } from './pages/purchase/payment';
+import { MoviesDemo } from './pages/purchase/movies';
+import { ShowsDemo } from './pages/purchase/shows';
 import { ConfirmationDemo } from './pages/purchase/confirmation';
 import { TicketService } from './core/services/compra/ticket.service';
 import { CheckboxModule } from 'primeng/checkbox';
 import { SplitterModule } from 'primeng/splitter';
-
+import { DividerModule } from 'primeng/divider';
+import { SkeletonModule } from 'primeng/skeleton';
+import { SnacksDemo } from './pages/purchase/snacks';
 @NgModule({
   declarations: [
     AppComponent,
@@ -82,12 +85,15 @@ import { SplitterModule } from 'primeng/splitter';
     StatsComponent,
     SellsComponent,
     DeadlineComponent,
-    PaymentDemo, 
-    PersonalDemo, 
-    SeatDemo, 
+    PaymentDemo,
+    SeatDemo,
+    MoviesDemo,
+    ShowsDemo,
+    SnacksDemo,
     ConfirmationDemo
   ],
   imports: [
+    SkeletonModule,
     TagModule,
     BrowserModule,
     AppRoutingModule,
@@ -119,7 +125,9 @@ import { SplitterModule } from 'primeng/splitter';
     StepsModule,
     CheckboxModule,
     CardModule,
-    SplitterModule
+    SplitterModule,
+    PasswordModule,
+    DividerModule
   ],
   providers: [
     MessageService,

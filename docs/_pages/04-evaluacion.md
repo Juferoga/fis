@@ -79,23 +79,8 @@ De acuerdo con los escenarios y aspectos mencionados previamente, se proponen la
 ---
 
 Para este apartado realizaremos el uso de las pruebas ACID, para probar nuestra base de datos teniendo en cuenta:
-<!-- 
-### Atomicidad
----
 
-### Consistencia
----
-
-### Aislamiento
----
-
-### Durabilidad
----
-
-## Mantenimiento del sistema
----
-
-Draft -->
+[Escenario de pruebas](https://raw.githubusercontent.com/Juferoga/fis/main/docs/assets/Ecenario_de_pruebas.pdf)
 
 ## Ensamblado del sistema
 ---

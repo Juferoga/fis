@@ -17,10 +17,12 @@ import { ShowsComponent } from './pages/shows/shows.component';
 import { UsersComponent } from './pages/users/users.component';
 import { StatsComponent } from './pages/stats/stats.component';
 import { SellsComponent } from './pages/sells/sells.component';
-import { PersonalDemo } from './pages/purchase/personal';
 import { SeatDemo } from './pages/purchase/seat';
 import { PaymentDemo } from './pages/purchase/payment';
 import { ConfirmationDemo } from './pages/purchase/confirmation';
+import { MoviesDemo } from './pages/purchase/movies';
+import { ShowsDemo } from './pages/purchase/shows';
+import { SnacksDemo } from './pages/purchase/snacks';
 
 const routes: Routes = [
   {
@@ -69,12 +71,20 @@ const routes: Routes = [
         component: PurchaseComponent,
         children: [
           {
-            path: 'personal',
-            component: PersonalDemo
+            path: 'movies',
+            component: MoviesDemo
+          },
+          {
+            path: 'shows',
+            component: ShowsDemo
           },
           {
             path: 'seat',
             component: SeatDemo
+          },
+          {
+            path: 'snacks',
+            component: SnacksDemo
           },
           {
             path: 'payment',

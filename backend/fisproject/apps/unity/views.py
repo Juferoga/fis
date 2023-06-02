@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from .models import Unity
+from rest_framework import viewsets, permissions
+from .serializers import UnitySerializer
 
-# Create your views here.
+class UnityViewSet(viewsets.ModelViewSet):
+    queryset = Unity.objects.all()
+    permission_classes = (permissions.AllowAny,)
+    serializer_class = UnitySerializer

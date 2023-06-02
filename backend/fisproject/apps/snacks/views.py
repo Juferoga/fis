@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from .models import Snack
+from rest_framework import viewsets, permissions
+from .serializers import SnackSerializer
 
-# Create your views here.
+class SnackViewSet(viewsets.ModelViewSet):
+    queryset = Snack.objects.all()
+    permission_classes = (permissions.AllowAny,)
+    serializer_class = SnackSerializer
